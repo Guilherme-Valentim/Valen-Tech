@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ValenTech Systems | Estruturas Digitais de Performance</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header id="main-header">
+    <div class="container header-flex">
+        <a href="#hero" class="logo">
+            <img src="assets/ValenTech menor.png" alt="ValenTech Logo">
+        </a>
+
+        <nav id="main-nav">
+            <ul>
+                <li><a href="#hero">Início</a></li>
+                <li><a href="#solutions">Soluções</a></li>
+                <li><a href="#method">Método</a></li>
+                <li><a href="#cta-final">Contato</a></li>
+            </ul>
+        </nav>
+
+        <a href="#cta-final" class="btn btn-primary">Agendar Reunião</a>
+
+        <button id="mobile-menu-btn">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+  
+    <main>
+        <section id="hero">
+            <div class="container reveal">
+                <h1>Transforme visitantes em clientes com um site focado em alta conversão.</h1>
+                <p class="subheadline">Não apenas um site, mas um sistema de captação. Unimos design de alta performance a funis de venda que transformam desconhecidos em futuros clientes.</p>
+                <div class="hero-actions">
+                    <a href="https://wa.me/5583998393877?text=Quero%20começar%20o%20meu%20projeto!" class="btn btn-primary btn-lg">Começar Projeto</a>
+                    <a href="#solutions" class="btn btn-secondary">Ver Soluções</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="positioning">
+            <div class="container">
+                <h2 class="reveal">Performance Orientada a Dados</h2>
+                <div class="positioning-grid">
+                    <div class="pos-item reveal">
+                        <div class="icon"><img src="assets/foguete (1).png" alt=""></div>
+                        <h3>Estratégico</h3>
+                        <p>Foco total nos objetivos comerciais.</p>
+                    </div>
+                    <div class="pos-item reveal">   
+                        <div class="icon"><img src="assets/apoio-suporte (1).png" alt=""></div>
+                        <h3>Técnico</h3>
+                        <p>Código otimizado e ultra veloz.</p>
+                    </div>
+                    <div class="pos-item reveal">
+                        <div class="icon"><img src="assets/paleta-de-tinta (1).png" alt=""></div>
+                        <h3>Design</h3>
+                        <p>Interface premium de alta autoridade.</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="solutions">
+            <div class="container">
+                <h2 class="reveal">Nossas Soluções</h2>
+                <div class="solutions-grid">
+                    <div class="solution-card reveal">
+                        <div class="icon"><img src="assets/predio-escolar (1).png" alt=""></div>
+                        <h3>Sites Institucionais</h3>
+                        <p>Posicionamento premium para a sua marca.</p>
+                    </div>
+                    <div class="solution-card reveal">
+                        <div class="icon"><img src="assets/pagina-de-destino (1).png" alt=""></div>
+                        <h3>Landing Pages</h3>
+                        <p>Páginas de alta conversão para campanhas.</p>
+                    </div>
+                    <div class="solution-card reveal">
+                        <div class="icon"><img src="assets/monetizacao (1).png" alt=""></div>
+                        <h3>Funis de Venda</h3>
+                        <p>Estratégia completa de captação automatizada.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="method">
+            <div class="container">
+                <h2 class="reveal">Método ValenTech</h2>
+                <div class="timeline reveal">
+                    <div class="step">
+                        <span class="number">1</span>
+                        <h4>Diagnóstico</h4>
+                    </div>
+                    <div class="step">
+                        <span class="number">2</span>
+                        <h4>Arquitetura</h4>
+                    </div>
+                    <div class="step">
+                        <span class="number">3</span>
+                        <h4>Design</h4>
+                    </div>
+                    <div class="step">
+                        <span class="number">4</span>
+                        <h4>Deploy</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cta-final">
+            <div class="container text-center reveal">
+                <h2>Pronto para escalar?</h2>
+                <p>Vamos construir a sua Pagina digital para performance.</p>
+                <div class="cta-actions">
+                    <a href="https://wa.me/5583998393877?text=Quero%20começar%20o%20meu%20projeto!" class="btn btn-primary">Agendar Reunião Agora</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+
+<script>
+  window.lenis = new Lenis({
+    duration: 1.2,
+    smoothWheel: true,
+    smoothTouch: false
+  })
+
+  function raf(time) {
+    lenis.raf(time)
+    requestAnimationFrame(raf)
+  }
+
+  requestAnimationFrame(raf)
+</script>
+
+    <script src="script.js"></script>
+</body>
+</html>
